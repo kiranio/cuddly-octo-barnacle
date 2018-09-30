@@ -1,0 +1,13 @@
+<div class="cart-item-wrapper" [ngStyle]="{color: 'blue'}">
+  <div>{{cartItem.name}}</div>
+  <div>
+    <button type="button"
+            class="btn btn-primary"
+            aria-label="Remove"
+            id={{cartItem.id}}
+            (click)="onCartItemDeleted($event)">Remove</button>
+  </div>
+</div>
+
+
+

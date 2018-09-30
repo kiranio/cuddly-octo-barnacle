@@ -1,0 +1,10 @@
+<div class="row">
+  <div class="col-lg-8 col-md-12">
+    <h4>Product list</h4>
+    <app-product (cartUpdated)="onCartUpdated($event)" [productIdParent]="productId" [productData]="productData"></app-product>
+  </div>
+  <div class="col-lg-4 col-md-12">
+    <h4>Shopping cart</h4>
+    <app-cart [cartItems]="cartItems" (cartItemDeleted)="onCartItemDeleted($event)" (cartItemChanged)="onCartItemChanged($event)"></app-cart>
+  </div>
+</div>

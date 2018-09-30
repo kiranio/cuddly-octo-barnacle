@@ -1,0 +1,15 @@
+<div class="cart-wrapper">
+  <div class="card card-block">
+    <div class="list-group">
+      <app-cartitem
+        class="list-group-item"
+        *ngFor="let item of cartItems; let i = index"
+        [cartItem]="item"
+        (cartItemDeleted)="onCartItemDeleted($event)"
+        (cartItemChanged)="onCartItemChanged($event)"
+      >
+      </app-cartitem>
+      <div  class="list-group-item" *ngIf='cartItems.length === 0'>No items in the Cart</div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,14 @@
+<div class="row product-wrapper">
+  <div class="col-sm-6 col-md-4 col-lg-4 product-item" *ngFor="let item of productItem| productfilter:filterAddedProducts | productfilter:filterPublishedProducts">
+    <div class="card card-block card-spacing">
+      <p class="card-title">{{item.productName}}</p>
+      <img [src]="item.productImage" alt="{{item.productName}}">
+      <div class="caption">
+        <p>${{item.price}} AUD</p>
+        <button class="btn btn-primary btn-lg" role="button" id={{item.id}} (click)="onCartUpdated($event)" aria-label="Add to cart">
+          Add to cart
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
