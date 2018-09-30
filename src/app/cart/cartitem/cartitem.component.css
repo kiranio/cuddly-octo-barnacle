@@ -2,16 +2,15 @@
     /*border: 1px solid limegreen;*/
     display: flex;
     justify-content: space-between;
-
 }
 
 input {
     text-align: center;
     width: 60px;
-}   
+}
 
 .cart-item-wrapper > div {
     flex-grow: 1;
-    color: #436f85; 
+    color: #436f85;
     text-align: center;
 }
