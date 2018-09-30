@@ -78,7 +78,7 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 #### The below items can be improved: 
 1. Offline cart (saving the state in the localStorage)
 2. Test coverage, inputs validation, error handlings 
-3. Track how many product items are left on storage. Do not add the finished product. 
+3. Track how many product items, and total value in the cart etc.
 4. Use the components styled by material, bootstrap4 etc.
 5. Linting, stylecheckers etc.
 
