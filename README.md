@@ -17,7 +17,7 @@ What things you need to install the software and how to install them
 ```
 Angular 6+
 Typescript 2.7+
-Bootstrap 3.3.7
+Bootstrap 4.1.1
 ```
 
 ### Installing

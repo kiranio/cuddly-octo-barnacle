@@ -5,7 +5,7 @@ import { CartItem } from '../cart.model';
 @Component({
   selector: 'app-cartitem',
   templateUrl: './cartitem.component.html',
-  styleUrls: ['./cartitem.component.css']
+  styleUrls: ['./cartitem.component.scss']
 })
 export class CartitemComponent implements OnInit {
   @Input() cartItem: CartItem;
@@ -14,20 +14,20 @@ export class CartitemComponent implements OnInit {
   }>();
   @Output() cartItemChanged = new EventEmitter<{
     productId: number
-  }>();  
+  }>();
 
   onCartItemDeleted(event) {
     const id = event.target.getAttribute('id');
     this.cartItemDeleted.emit({
         productId: id
       });
-  }  
+  }
 
   onCartItemChanged(event) {
     const id = event.target.getAttribute('id');
     this.cartItemChanged.emit({
         productId: id
-      });    
+      });
   }
 
   constructor() {

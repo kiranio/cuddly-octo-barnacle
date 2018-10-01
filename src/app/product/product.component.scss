@@ -1,7 +1,8 @@
+@import "src/theme/theme-variables";
+
 .product-wrapper {
-    /*border: 1px solid grey;*/
-    color: lightseagreen;
-    padding: 10px;
+    color: $black;
+    padding: 1em;
     text-align: center;
 }
 
@@ -13,5 +14,5 @@
 .card-spacing {
     margin: 5px;
     padding: 2rem;
-    border: 1px #ccc5c5 solid;
+    border: 1px $border-color-card solid;
 }
