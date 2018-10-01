@@ -30,6 +30,7 @@ $yellow:  #ffc107;
 $green:   #28a745;
 $teal:    #20c997;
 $cyan:    #17a2b8;
+$darkgrey: darkslategray;
 
 $theme-colors: (
   primary: $blue,
@@ -44,6 +45,7 @@ $theme-colors: (
 
 $font-family-loto: 'Lato', sans-serif;
 $border-color-card: #ccc5c5;
+
 
 // Use Bootstrap defaults for other variables, imported here so we can access all app variables in one place when used
 // in components.
